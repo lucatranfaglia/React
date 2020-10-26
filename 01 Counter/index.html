@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <!-- Carica React. -->
+        <!-- Nota: quando rilasci il codice in produzione, sostituisci "development.js" con "production.min.js". -->
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+        <!-- https://purecss.io/ -->
+        <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="index.css" crossorigin="anonymous">
+
+        <!-- Carica il nostro componente React. -->
+        <!-- attenzione all'ordine (se metto main sopra buttonCounter non funziona il codice) -->
+        <script src="buttonCounter.js" type="text/babel"></script>
+        <script src="main.js" type="text/babel"></script>
+        
+    </head>
+
+    <body>
+        <div id="root"></div>
+    </body>
+
+</html>
